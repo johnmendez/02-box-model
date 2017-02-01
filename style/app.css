@@ -62,9 +62,14 @@ width: calc(100% / 3 - 1rem - 1rem);
   float: left;
 }
 
-
-
 .profile__repos {
-  margin-top: 5rem;
-  background: yellow;
+  border-top: thin solid black;
+}
+
+.repo-name {
+  float: left;
+}
+
+.repo-language {
+  float: right;
 }

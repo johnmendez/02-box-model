@@ -15,9 +15,10 @@ ul {
 
 header {
   background: blue;
-  padding: 2rem;
+  /*padding: 2rem;*/
   overflow: auto;
 }
+
 
 .title {
   float: left;
@@ -30,11 +31,40 @@ header {
   margin: 0 1rem;
 }
 
+.main {
+  background-color: #f5d4a9;
+  height: 100vh;
+  overflow: scroll;
+}
+
 .grid {
-  background: lightblue;
   overflow: auto;
+}
+
+.grid__item {
+
+border: thin solid black;
+border-radius: 0.5rem;
+margin: 1rem;
+/*background: #382655;*/
+float: left;
+
+width: calc(100% / 3 - 1rem - 1rem);
+
 }
 
 .container {
   margin: 0 auto;
+  padding: 3rem;
+}
+
+.profile__pic {
+  float: left;
+}
+
+
+
+.profile__repos {
+  margin-top: 5rem;
+  background: yellow;
 }

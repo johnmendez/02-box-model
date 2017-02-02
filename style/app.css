@@ -14,11 +14,29 @@ ul {
 }
 
 header {
-  background: blue;
+  background: #e6634f;
   /*padding: 2rem;*/
   overflow: auto;
+  color: white;
 }
 
+img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  max-width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+
+}
 
 .title {
   float: left;
@@ -32,7 +50,7 @@ header {
 }
 
 .main {
-  background-color: #f5d4a9;
+  background-color: #fff;
   height: 100vh;
   overflow: scroll;
 }
@@ -43,8 +61,7 @@ header {
 
 .grid__item {
 
-border: thin solid black;
-border-radius: 0.5rem;
+min-width: 21rem;
 margin: 1rem;
 /*background: #382655;*/
 float: left;
@@ -54,22 +71,59 @@ width: calc(100% / 3 - 1rem - 1rem);
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto;;
   padding: 3rem;
+  max-width: 85%;
+}
+
+.profile{
+  border: thin solid black;
+  border-radius: 0.5rem;
+  margin: 0;
+}
+
+.name {
+  font-size: 1.5rem
+}
+
+.username {
+  color: #717171;
 }
 
 .profile__pic {
   float: left;
+  margin-right: 1rem;
 }
 
-.profile__repos {
+.profile__top {
+  overflow: auto;
+  padding: 1rem;
+}
+
+.repo {
+  overflow: auto;
   border-top: thin solid black;
 }
 
 .repo-name {
   float: left;
+  padding-left: 1rem;
 }
 
 .repo-language {
   float: right;
+  padding-right: 1rem;
+}
+
+.repo-dot {
+  height: 1rem;
+  width: 1rem;
+  background: yellow;
+  float: left;
+  margin-right: .5rem;
+ border-radius: 50%;
+}
+
+.profile__repos {
+  margin: 0;
 }
